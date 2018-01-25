@@ -1,0 +1,28 @@
+#grid {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.box {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 5px 0 0;
+  z-index: 1;
+  background: #000;
+  color: #fff;
+  cursor: pointer; }
+
+input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px; }
+  input[type=number] {
+    width: 50px; }
+  input[type=button] {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ddd; }
