@@ -40,35 +40,3 @@ function mixColors(firstColor, secondColor, weight) {
 function setColor(n, c) {
   $('.box:nth-of-type(' + n + ')').css('background', c);
 }
-
-
-/*
-// Objektgetrickse
-function Logger() {
-    var privateVar = "x";
-
-    function debug(message) {
-      console.log("debug", message);
-    }
-
-    function privateFunction() {
-
-
-    }
-
-
-
-    // lang:
-    // var x = new Object();
-//    x["debug"] = debug
-  // return x;
-
-    // kurz:
-    return {
-      debug: debug
-    };
-}
-
-// var x = new Logger(); x.debug('test');
-
-*/
