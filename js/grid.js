@@ -47,7 +47,9 @@ function initialize(n) {
   clear();
   fillGrid(n);
   colorize(getRandomColor(), getRandomColor());
-  shuffle();
+  do {
+    shuffle();
+  } while (isSorted());
 }
 
 function getOrder() {
