@@ -9,30 +9,40 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/colors.js"></script>
     <script src="js/grid.js"></script>
+    <script src="js/game.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>C H R O M A | S O R T</title>
   </head>
   <body>
-    <div class="section" id="game">
+    <div class="section">
       <h1>ChromaSort</h1>
+      <p>Can you make a pretty gradient? Simply drag & drop the boxes to get them in the correct order.<br>Reset the board with the buttons below, or start a new game by refreshing the window.</p>
+    </div>
+    <div class="section" id="game">
       <div id="grid"></div>
     </div>
     <hr>
     <div class="section">
-      <p>
-        Puzzles solved:<br><span id="solved">0</span>
-      </p>
-      <p>
-        Points:<br><span id="points">0</span>
-      </p>
+      <table>
+        <tr>
+          <td>
+            <p>Puzzles solved:<br><span id="solved">0</span></p>
+            <p>Points:<br><span id="points">0</span></p>
+          </td>
+          <td>
+            <p>Time:<br><span id="timer">0</span></p>
+          </td>
+        </tr>
+      </table>
     </div>
     <hr>
     <div class="section">
-      <input type="button" value="Easy" onclick="initialize(5); $('#num').val('5'); difficulty = 5;"> <input type="button" value="Medium" onclick="initialize(8); $('#num').val('8'); difficulty = 8;"> <input type="button" value="Hard" onclick="initialize(12); $('#num').val('12'); difficulty = 12;">
+      <input type="button" value="Easy" onclick="setDifficulty(5);"> <input type="button" value="Medium" onclick="setDifficulty(8);"> <input type="button" value="Hard" onclick="setDifficulty(12);">
     </div>
+    <hr>
     <div class="section">
-      <input type="number" name="num" id="num" value="5"> <input type="button" value="Custom" onClick="if(parseInt($('#num').val()) < 3) { $('#num').val('3'); } initialize(parseInt($('#num').val())); difficulty = parseInt($('#num').val());">
+      <input type="button" value="Toggle Light/Dark" onclick="$('body').toggleClass('dark');">
     </div>
     <hr>
     <div class="footer">

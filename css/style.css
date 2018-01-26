@@ -9,9 +9,10 @@ body {
 
 p {
   font-size: 20px;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  margin-top: 5px; }
 
-#solved, #points {
+#solved, #points, #timer {
   font-size: 25px;
   font-weight: bold; }
 
@@ -20,6 +21,7 @@ h1 {
   font-size: 40px;
   font-variant: small-caps;
   letter-spacing: 5px;
+  margin-bottom: 0;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -27,7 +29,8 @@ h1 {
     letter-spacing: 10px; }
 
 hr {
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  margin: 10px 0 10px 0; }
 
 .section {
   width: -webkit-fit-content;
@@ -45,21 +48,30 @@ hr {
   .footer p #heart {
     font-size: 10px;
     color: red; }
-  .footer p a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #888;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-    .footer p a:hover {
-      color: #444; }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #888;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a:hover {
+    color: #444; }
+
+td {
+  padding: 10px 30px 0 30px; }
+  td:first-child {
+    border-right: 2px solid #ddd; }
 
 #grid {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content; }
+  width: fit-content;
+  padding: 10px 10px 5px 10px;
+  margin: 0 0 20px 0;
+  border-radius: 10px; }
 
 .box {
   display: inline-block;
@@ -72,10 +84,12 @@ hr {
   background: #000;
   color: #fff;
   cursor: pointer; }
+  .box:last-child {
+    margin: 0; }
 
 #message {
   position: absolute;
-  top: 120px;
+  top: 185px;
   left: 0px;
   width: 100%;
   margin: auto;
@@ -105,22 +119,34 @@ input {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 20px;
-  font-family: 'Calibri', sans-serif;
-  color: #444; }
-  input[type=number] {
-    background: #f2f2f2;
-    text-align: center;
-    width: 50px; }
-    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0; }
+  font-family: 'Calibri', sans-serif; }
   input[type=button] {
     padding-left: 20px;
     padding-right: 20px;
     background: #ddd;
+    color: #444;
     font-variant: small-caps;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     input[type=button]:hover {
       background: #ccc; }
+
+body.dark {
+  background-color: #333;
+  color: #ddd; }
+  body.dark hr {
+    border: 1px solid #222; }
+  body.dark a {
+    color: #eee; }
+    body.dark a:hover {
+      color: #fff; }
+  body.dark td:first-child {
+    border-right: 2px solid #222; }
+  body.dark input {
+    border: 1px solid #222; }
+    body.dark input[type=button] {
+      color: #ddd;
+      background: #222; }
+      body.dark input[type=button]:hover {
+        background: #111; }

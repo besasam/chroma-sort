@@ -41,21 +41,6 @@ function shuffle() {
   }
 }
 
-function addWinMessage() {
-  var msg = document.createElement('span');
-  msg.id = 'message';
-  msg.innerHTML = 'Sorted!';
-  document.getElementById('game').appendChild(msg);
-}
-
-function showWinMessage() {
-  $('#message').addClass('show');
-}
-
-function hideWinMessage() {
-  $('#message').removeClass('show');
-}
-
 function initialize(n) {
   clear();
   fillGrid(n);
@@ -64,39 +49,4 @@ function initialize(n) {
     shuffle();
   } while (isSorted());
   addWinMessage();
-}
-
-function getOrder() {
-  var boxes  = $('.box');
-  var length = boxes.length;
-  var order = Array(length);
-  for(var i = 0; i < length; i++) {
-    order[i] = parseInt(boxes[i].id);
-  }
-  return order;
-}
-
-function equals(array1, array2) {
-  if(array1.length != array2.length) {
-    return false;
-  }
-  for(var i = 0; i < array1.length; i++) {
-    if(array1[i] != array2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-function isSorted() {
-  var boxes  = $('.box');
-  var length = boxes.length;
-  var correct1 = Array(length);
-  var correct2 =  Array(length);
-  for(var i = 0; i < length; i++) {
-    correct1[i] = i;
-    correct2[i] = length - i - 1;
-  }
-  var current = getOrder();
-  return(equals(current, correct1) || equals(current, correct2));
 }

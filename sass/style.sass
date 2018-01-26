@@ -8,8 +8,9 @@ body
 p
   font-size: 20px
   font-variant: small-caps
+  margin-top: 5px
 
-#solved, #points
+#solved, #points, #timer
   font-size: 25px
   font-weight: bold
 
@@ -18,12 +19,14 @@ h1
   font-size: 40px
   font-variant: small-caps
   letter-spacing: 5px
+  margin-bottom: 0
   transition: all 0.5s ease
   &:hover
     letter-spacing: 10px
 
 hr
   border: 1px solid #ddd
+  margin: 10px 0 10px 0
 
 .section
   width: fit-content
@@ -40,17 +43,26 @@ hr
     #heart
       font-size: 10px
       color: red
-    a
-      text-decoration: none
-      font-weight: bold
-      color: #888
-      transition: all 0.2s ease
-      &:hover
-        color: #444
+
+a
+  text-decoration: none
+  font-weight: bold
+  color: #888
+  transition: all 0.2s ease
+  &:hover
+    color: #444
+
+td
+  padding: 10px 30px 0 30px
+  &:first-child
+    border-right: 2px solid #ddd
 
 #grid
   position: relative
   width: fit-content
+  padding: 10px 10px 5px 10px
+  margin: 0 0 20px 0
+  border-radius: 10px
 
 .box
   display: inline-block
@@ -63,10 +75,12 @@ hr
   background: #000
   color: #fff
   cursor: pointer
+  &:last-child
+    margin: 0
 
 #message
   position: absolute
-  top: 120px
+  top: 185px
   left: 0px
   width: 100%
   margin: auto
@@ -93,19 +107,33 @@ input
   border-radius: 5px
   font-size: 20px
   font-family: 'Calibri', sans-serif
-  color: #444
-  &[type=number]
-    background: #f2f2f2
-    text-align: center
-    width: 50px
-    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
-      -webkit-appearance: none
-      margin: 0
   &[type=button]
     padding-left: 20px
     padding-right: 20px
     background: #ddd
+    color: #444
     font-variant: small-caps
     transition: all 0.2s ease
     &:hover
       background: #ccc
+
+// DARK THEME
+
+body.dark
+  background-color: #333
+  color: #ddd
+  hr
+    border: 1px solid #222
+  a
+    color: #eee
+    &:hover
+      color: #fff
+  td:first-child
+      border-right: 2px solid #222
+  input
+    border: 1px solid #222
+    &[type=button]
+      color: #ddd
+      background: #222
+      &:hover
+        background: #111
