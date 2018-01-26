@@ -5,7 +5,7 @@ $('#grid').sortable({
   revert: 100,
   stop: function(ondrop, item) {
     if(isSorted()) {
-      console.log("Sorted!");
+      alert("Sorted!");
     }
   }
 });
