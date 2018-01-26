@@ -32,7 +32,7 @@
       <input type="button" value="Easy" onclick="initialize(5); $('#num').val('5'); difficulty = 5;"> <input type="button" value="Medium" onclick="initialize(8); $('#num').val('8'); difficulty = 8;"> <input type="button" value="Hard" onclick="initialize(12); $('#num').val('12'); difficulty = 12;">
     </div>
     <div class="section">
-      <input type="number" name="num" id="num" value="5"> <input type="button" value="Custom" onClick="initialize(parseInt(document.getElementById('num').value)); difficulty = parseInt($('#num').val());">
+      <input type="number" name="num" id="num" value="5"> <input type="button" value="Custom" onClick="if(parseInt($('#num').val()) < 3) { $('#num').val('3'); } initialize(parseInt($('#num').val())); difficulty = parseInt($('#num').val());">
     </div>
     <hr>
     <div class="footer">
