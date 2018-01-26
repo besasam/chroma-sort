@@ -1,3 +1,53 @@
+body
+  width: fit-content
+  margin: auto
+  background-color: #eee
+  color: #444
+  font-family: 'Calibri', sans-serif
+
+p
+  font-size: 20px
+  font-variant: small-caps
+
+#solved, #points
+  font-size: 25px
+  font-weight: bold
+
+h1
+  text-align: center
+  font-size: 40px
+  font-variant: small-caps
+  letter-spacing: 5px
+  transition: all 0.5s ease
+  &:hover
+    letter-spacing: 10px
+
+hr
+  border: 1px solid #ddd
+
+.section
+  width: fit-content
+  margin: auto
+  padding: 5px 0 5px 0
+  text-align: center
+
+.footer
+  p
+    font-size: 12px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 2px
+    #heart
+      font-size: 10px
+      color: red
+    a
+      text-decoration: none
+      font-weight: bold
+      color: #888
+      transition: all 0.2s ease
+      &:hover
+        color: #444
+
 #grid
   position: relative
   width: fit-content
@@ -14,13 +64,48 @@
   color: #fff
   cursor: pointer
 
+#message
+  position: absolute
+  top: 120px
+  left: 0px
+  width: 100%
+  margin: auto
+  z-index: 0
+  color: rgba(255, 255, 255, 0)
+  font-size: 60px
+  text-transform: uppercase
+  letter-spacing: 4px
+  font-weight: bold
+  visibility: hidden
+  transition: all 0.2s ease
+
+.show
+  visibility: visible !important
+  color: rgba(255, 255, 255, 1) !important
+  text-shadow: 0 0 1px black
+  letter-spacing: 10px !important
+  z-index: 10 !important
+  transition: all 0.2s ease
+
 input
-  padding: 5px
+  padding: 10px
   border: 1px solid #ddd
   border-radius: 5px
+  font-size: 20px
+  font-family: 'Calibri', sans-serif
+  color: #444
   &[type=number]
+    background: #f2f2f2
+    text-align: center
     width: 50px
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+      -webkit-appearance: none
+      margin: 0
   &[type=button]
-    padding-left: 10px
-    padding-right: 10px
+    padding-left: 20px
+    padding-right: 20px
     background: #ddd
+    font-variant: small-caps
+    transition: all 0.2s ease
+    &:hover
+      background: #ccc

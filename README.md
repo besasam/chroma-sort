@@ -1,4 +1,4 @@
-# chroma-squares
+# Chroma Sort
 Simple color sorting game written in JavaScript, using jQuery and jQuery UI.
 
 ## How to play

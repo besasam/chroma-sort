@@ -10,8 +10,6 @@ function createBox(id) {
   box.className = 'box';
   box.id = id;
   document.getElementById('grid').appendChild(box);
-  /*box.setAttribute('draggable', true);
-  box.setAttribute('ondragstart', drag(event))*/
 }
 
 function fillGrid(n) {
@@ -43,6 +41,21 @@ function shuffle() {
   }
 }
 
+function addWinMessage() {
+  var msg = document.createElement('span');
+  msg.id = 'message';
+  msg.innerHTML = 'Sorted!';
+  document.getElementById('game').appendChild(msg);
+}
+
+function showWinMessage() {
+  $('#message').addClass('show');
+}
+
+function hideWinMessage() {
+  $('#message').removeClass('show');
+}
+
 function initialize(n) {
   clear();
   fillGrid(n);
@@ -50,6 +63,7 @@ function initialize(n) {
   do {
     shuffle();
   } while (isSorted());
+  addWinMessage();
 }
 
 function getOrder() {
