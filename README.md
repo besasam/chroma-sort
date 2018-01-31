@@ -1,8 +1,22 @@
 # Chroma Sort
-Simple color sorting game written in JavaScript, using jQuery, [jQuery UI](https://jqueryui.com/) and [Buzz](http://buzz.jaysalvat.com/).
+A simple color sorting browser game.
+
+Current version: **0.1**
+
+## Demo
+You can play it on [my website](https://besasam.github.io/demos/chroma-sort/). (version might not be up to date)
 
 ## How to play
-Open index.html in your browser. The game is initialized with 5 squares but you can set your own number in the input box, higher number of squares = higher difficulty. Simply drag & drop the squares in the correct order & see how many points you can collect! :)
+Drag & drop the boxes into the correct order to make a gradient between two colors. Change the difficulty using the buttons below and see how many points you can collect.
 
-### Credits
-Sound effect by [LittleRobotSoundFactory](https://freesound.org/people/LittleRobotSoundFactory/).
+The outer colors are chosen randomly. If they are too similar, simply click the buttons again to get a new level - don't worry, you won't lose your points until you reload the page.
+
+## Development
+Planned updates/features can be found on [Trello](https://trello.com/b/XQebN9kt/chroma-sort). You are welcome to open an issue to make a suggestion, or even work on the code yourself and start a pull request! 100% of pull requests for this project so far have been accepted ( ͡° ͜ʖ ͡°) 
+
+---
+
+#### Credits
+* [jQuery UI](https://jqueryui.com/) for drag & drop/sorting
+* [Buzz](http://buzz.jaysalvat.com/) for sound
+* Sound effect by [LittleRobotSoundFactory](https://freesound.org/people/LittleRobotSoundFactory/)
