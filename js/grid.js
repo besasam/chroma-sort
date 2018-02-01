@@ -44,7 +44,15 @@ function shuffle() {
 function initialize(n) {
   clear();
   fillGrid(n);
-  colorize(getRandomColor(), getRandomColor());
+  var firstColor = getRandomColor();
+  var secondColor;
+  var rolls = 0;
+  do {
+    secondColor = getRandomColor();
+    rolls++;
+  } while(colorDifference(firstColor, secondColor) == false && rolls < 50);
+  console.log(rolls);
+  colorize(firstColor, secondColor);
   do {
     shuffle();
   } while (isSorted());

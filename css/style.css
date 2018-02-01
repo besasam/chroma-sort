@@ -125,6 +125,7 @@ input {
     padding-right: 20px;
     background: #ddd;
     color: #444;
+    border-bottom: 1px solid #aaa;
     font-variant: small-caps;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -147,6 +148,7 @@ body.dark {
     border: 1px solid #222; }
     body.dark input[type=button] {
       color: #ddd;
-      background: #222; }
+      background: #222;
+      border-bottom: 1px solid #000; }
       body.dark input[type=button]:hover {
         background: #111; }
