@@ -12,7 +12,7 @@ Drag & drop the boxes into the correct order to make a gradient between two colo
 The outer colors are chosen randomly. If they are too similar, simply click the buttons again to get a new level - don't worry, you won't lose your points until you reload the page.
 
 ## Development
-Planned updates/features can be found on [Trello](https://trello.com/b/XQebN9kt/chroma-sort). You are welcome to open an issue to make a suggestion, or even work on the code yourself and start a pull request! 100% of pull requests for this project so far have been accepted ( ͡° ͜ʖ ͡°)
+Planned fixes and features can be found in the issue tracker. You are welcome to add your own suggestions, or even work on the code yourself and start a pull request! 100% of pull requests for this project so far have been accepted ( ͡° ͜ʖ ͡°)
 
 ---
 
