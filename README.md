@@ -1,7 +1,7 @@
 # Chroma Sort
 A simple color sorting browser game.
 
-Current version: **0.1.1**
+Current version: **0.1.2**
 
 ## Demo
 You can play it on [my website](https://besasam.github.io/demos/chroma-sort/). (version might not be up to date)

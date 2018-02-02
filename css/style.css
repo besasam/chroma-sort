@@ -69,8 +69,8 @@ td {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 10px 10px 5px 10px;
-  margin: 0 0 20px 0;
+  padding: 10px 10px 0 10px;
+  margin: 0;
   border-radius: 10px; }
 
 .box {
@@ -89,8 +89,6 @@ td {
 
 #message {
   position: absolute;
-  top: 185px;
-  left: 0px;
   width: 100%;
   margin: auto;
   z-index: 0;

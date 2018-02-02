@@ -7,6 +7,9 @@ var timerStart = new Date;
 initialize(difficulty);
 winSound.load();
 
+var pos = $('#grid').offset();
+$('#message').css({top: pos.top + 20, left: 0});
+
 $('#grid').sortable({
   cursor: 'pointer',
   revert: 100,
